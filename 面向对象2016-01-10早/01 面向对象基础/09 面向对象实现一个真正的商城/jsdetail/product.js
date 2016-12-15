@@ -1,16 +1,16 @@
-//¶¨Òå²úÆ·¶ÔÏó
+//ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
 function Product(){
-    /*²úÆ·Ãû³Æ*/
-    this.name='HMÐÝÏÐ·þµÇÉ½°ü'
-    /*²úÆ·ÃèÊö*/
-    this.description='°ô°ôµÄ£¬°ô°ôµÄ£¬µÇÉ½Ò»Á÷£¬·þÎñÒ»Á÷£¬ÄãºÃ£¬ÎÒºÃ£¬ËûÒ²ºÃ£¬Ì«°ôÁË£¬Ò»¿ÚÆøµÈÉÏÖéÄÂÀÊÂê·å'
-    /*ÆÕÍ¨¼Û¸ñ*/
+    /*ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½*/
+    this.name='HMï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½É½ï¿½ï¿½'
+    /*ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½*/
+    this.description='ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½É½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ÒºÃ£ï¿½ï¿½ï¿½Ò²ï¿½Ã£ï¿½Ì«ï¿½ï¿½ï¿½Ë£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'
+    /*ï¿½ï¿½Í¨ï¿½Û¸ï¿½*/
     this.normalPrice=144
-    /*ÍÅ¹º¼Û¸ñ*/
+    /*ï¿½Å¹ï¿½ï¿½Û¸ï¿½*/
     this.youhuijia=120
-    /*ÒÑ¾­¹ºÂòµÄÈËÊý*/
+    /*ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
     this.buySum=100;
-    /*ÂÖ²¥Í¼Æ¬ÁÐ±í*/
+    /*ï¿½Ö²ï¿½Í¼Æ¬ï¿½Ð±ï¿½*/
     this.images=[
         {small:'../images/s11.jpg',big:'../images/s11.jpg'},
         {small:'../images/s12.jpg',big:'../images/s12.jpg'},
@@ -18,9 +18,9 @@ function Product(){
     ]
 }
 Product.prototype={
-    /*ÆÕÍ¨¹ºÂò*/
+    /*ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½*/
     buy:function(){},
-    /*°ó¶¨Í¼Æ¬ÁÐ±í*/
+    /*ï¿½ï¿½Í¼Æ¬ï¿½Ð±ï¿½*/
     bindDOMImage:function(){
         var str=''
         for(var i= 0,len=this.images.length;i<len;i++) {
@@ -31,32 +31,32 @@ Product.prototype={
         }
         $('#etalage').html(str)
 
-        /*jquery²å¼þÊµÏÖµÄ»ÃµÆÆ¬ÌØÐ§*/
+        /*jqueryï¿½ï¿½ï¿½Êµï¿½ÖµÄ»Ãµï¿½Æ¬ï¿½ï¿½Ð§*/
         $('#etalage').etalage({
             thumb_image_width: 250,
             thumb_image_height: 300,
         });
     },
-    /*°ó¶¨ÏêÏ¸ÐÅÏ¢*/
+    /*ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Ï¢*/
     bindDOMDetail:function(){
-        /*°ó¶¨ÔªËØ*/
+        /*ï¿½ï¿½Ôªï¿½ï¿½*/
         $('#pname').html(this.name)
         $('#description').html(this.description)
         $('#price').html(this.normalPrice)
         $('#groupPrice').html(this.youhuijia)
         $('#buyCount').html(this.buySum)
     },
-    /*°ó¶¨ÊÂ¼þ*/
+    /*ï¿½ï¿½ï¿½Â¼ï¿½*/
     bindEvents:function(){
-        /*°ó¶¨ÊÂ¼þ*/
+        /*ï¿½ï¿½ï¿½Â¼ï¿½*/
         $('#btnaddcart').onclick=function(){
 
         }
         $('#btnbuy').onclick=function(){}
     },
-    /*ÍÅ¹º*/
+    /*ï¿½Å¹ï¿½*/
     groupBuy:function(){},
-    /*Ìí¼Óµ½¹ºÎï³µ*/
+    /*ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï³µ*/
     addCart:function(){
 
     }
